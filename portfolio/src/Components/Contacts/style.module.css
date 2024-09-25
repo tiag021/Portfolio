@@ -1,0 +1,46 @@
+/* Contacts.module.css */
+.contacts {
+  padding: 40px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}
+
+.contacts h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.contacts p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.contacts ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contacts ul li {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.contacts ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.contacts ul li a:hover {
+  color: #ff7000;
+}
+
+.contacts a {
+  text-decoration: none;
+  color: inherit; /* Use this if you want to keep the original color */
+}
+
+.contacts i {
+  margin-right: 8px; /* Space between icon and text */
+}

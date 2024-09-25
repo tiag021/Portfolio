@@ -1,0 +1,78 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: transparent;
+  z-index: 100;
+  transition: background 0.4s ease; /* Smooth transition for background */
+}
+
+.header.scrolled {
+  background: rgba(24, 24, 24, 0.63);
+}
+
+.header_content {
+  display: flex; /* Use flexbox to arrange children */
+  justify-content: space-between; /* Space between logo and nav */
+  align-items: center; /* Center items vertically */
+  padding: 0 20px; /* Add padding to prevent overlap */
+  height: 86px; /* Height of the header */
+}
+
+.header.scrolled .header_content {
+  height: 70px; /* Adjusted height when scrolled */
+}
+
+.logo {
+  display: flex; /* Flexbox for logo */
+  align-items: center; /* Center logo vertically */
+}
+
+.logo a {
+  padding: 20px 20px; /* Add padding */
+  font-size: 30px;
+  font-weight: 500;
+  color: #ffffff;
+  text-decoration: none; /* No underline */
+}
+
+.main_nav {
+  margin-left: auto; /* Push the nav to the right */
+}
+
+.main_nav ul {
+  list-style-type: none; /* Remove bullets */
+  display: flex; /* Use flexbox for nav items */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+  padding-right: 20px;
+}
+
+.main_nav ul li {
+  margin-left: 40px; /* Space between links */
+  position: relative; /* Required for positioning */
+  transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+/* Scale the item when hovered */
+.main_nav ul li:hover {
+  transform: scale(1.1); /* Slightly enlarge the hovered item */
+}
+
+/* Hover effect for links */
+.main_nav ul li a {
+  font-size: 20px;
+  font-weight: 500; /* Change font weight for better readability */
+  color: #ffffff;
+  text-decoration: none; /* No underline for links */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.main_nav ul li a:hover {
+  color: #ff3000; /* Change color on hover */
+}
+
+.main_nav ul li a.active {
+  color: #ff3000; /* Color for the active link */
+}
